@@ -45,7 +45,7 @@ public class BugTest {
 				.header("Authorization", "Basic " + auth)
 				.multiPart("file", new File("C:\\Users\\monika23\\Downloads\\Screenshot 2025-02-04 230710.png")).log()
 				.all().post("rest/api/3/issue/{key}/attachments").then().log().all().assertThat().statusCode(200);
-				System.out.println("I am user 1");
+				System.out.println("I am user 2");
 	}
 
 }
